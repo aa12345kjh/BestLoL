@@ -1,3 +1,4 @@
+
 function myCtrl () {
 
   this.heros = [
