@@ -7,9 +7,10 @@
   <title>胖子與瘦子LOL攻略</title>
  
 
+ 
+
   <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-
 <style id="jsbin-css">
 
 
@@ -19,22 +20,10 @@
 <body>
     <div id = "o" ng-hide = "hero">
     
-
-    <img id = "picture" src ="http://lol.garena.tw/images/learn/lore/Institute_of_War.jpg" alt="封面圖">
-        <nav>
-    <img class = "print" src = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10540887_875524899166733_78737815_n.jpg?oh=54da41da662257f78bad45e96c5b4f63&oe=549FE35B&__gda__=1419764870_36db483b2c1f5dfd50247dedf14a293a" alt = "圖" title = "按我" />    
-    <button class = "noPrint" onclick = "window.print()">列印</button>
-  </nav>
-    <h2 class=ho>甚麼是英雄聯盟？</h2>
-
-<p>英雄聯盟(英語：League of Legends，簡稱「LOL」) ,是由Riot Games 所製作的「DotA」類型遊戲, 玩家扮演召喚師召喚並控制英雄,並被各自分到兩組隊伍。
-每一組由五名召喚師組成,兩組隊伍從地圖相反方向的主堡內開始,「破壞敵方的主堡」或「使敵方投降」以取得勝利。要破壞主堡,隊伍必須破壞一系列防禦塔,而防禦塔通常被放置在可以抵達敵方水晶主堡的3條主要路線上，每個建築物（包括防禦塔）在其外側建築物被破壞前會處於無敵（不能被攻擊）狀態,直到外側防禦塔遭到破壞,以此方式持續推進,獲取勝利。
-  
-<h2 class=ho>英雄</h2>
-
         <img id = "picture" src ="http://lol.garena.tw/images/learn/lore/Institute_of_War.jpg" alt="封面圖">
             <nav>
-        <img class = "print" src = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10540887_875524899166733_78737815_n.jpg?oh=54da41da662257f78bad45e96c5b4f63&oe=549FE35B&__gda__=1419764870_36db483b2c1f5dfd50247dedf14a293a" alt = "圖" title = "按我" />            <button class = "noPrint" >列印</button>
+        <img class = "print" src = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10540887_875524899166733_78737815_n.jpg?oh=54da41da662257f78bad45e96c5b4f63&oe=549FE35B&__gda__=1419764870_36db483b2c1f5dfd50247dedf14a293a" alt = "圖" title = "按我" />    
+        <button class = "noPrint" >列印</button>
       </nav>
         <h2 class="ho">甚麼是英雄聯盟？</h2>
 
@@ -72,24 +61,15 @@
   
 
   <div id="o" ng-show ="hero">
-
-
-  
-     <img ng-src = "{{hero.img}}"/>
-
-    </div>
+    <img ng-src = "{{hero.img}}"/>
+    <h1>路線：{{hero.sts}}<h1>
+    攻略：{{hero.text}}
       
-    <br/>
-    
-    
-    <ul>
-      <li>武力：{{hero.text}}</li>
-      <li>智力：{{hero.img}}</li>
-     </ul>
-    
-    
+
     
   </div>
+
+  
   
   <div id = "menu">
    <img id = "photo" src = "https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10405488_856584607727429_804522056135724792_n.jpg?oh=2f63936ec428ee23c85a2cfcd9b26f9e&oe=54E8C210&__gda__=1424223953_e6fe5d6d0c40a803fb6ae40338ac5522" alt = "標誌"/>
