@@ -18,13 +18,14 @@
 </head>
 
 <body>
-    <div id = "o" ng-hide = "hero">
-    
-        <img id = "picture" src ="http://lol.garena.tw/images/learn/lore/Institute_of_War.jpg" alt="封面圖">
-            <nav>
+  <nav>
         <img class = "print" src = "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10712961_733459460071971_5855446396591155799_n.jpg?oh=c4b478f9f91aa2091afbba24fbd981f5&oe=552708FB&__gda__=1432924365_c3faa7899867d46eee48f1860caf2195" alt = "圖" title = "按我" />    
          <button class = "noPrint" onclick = "window.print()">列印</button>
       </nav>
+    <div id = "o" ng-hide = "hero">
+    
+        <img id = "picture" src ="http://lol.garena.tw/images/learn/lore/Institute_of_War.jpg" alt="封面圖">
+            
         <h2 class="ho">甚麼是英雄聯盟？</h2>
 
     <p>英雄聯盟(英語：League of Legends，簡稱「LOL」) ,是由Riot Games 所製作的「DotA」類型遊戲, 玩家扮演召喚師召喚並控制英雄,並被各自分到兩組隊伍。
@@ -40,7 +41,7 @@
           <h2 class="ho">英雄技能以及召喚師技能</h2>
     每位英雄都有獨特的一組技能組,每一組技能組將會四個技能,普通技能的原始熱鍵分別是Q W E ,而大招的技能熱鍵為R,除此之外每位玩家能設定兩個『召喚師技能』,如:治癒、重擊、點燃、虛弱、傳送等十三個技能,將會因為等級而逐漸開放。
 
-    <h2 class = "ho">故事</h2>
+    <h2 class = "ho"><a name ="story">故事</h2>
 
           <p>直到二十年前，符文大地一直都處於各種災難與戰爭中。這片大陸的人民自遠古以來就習慣結群而鬥，用最原始的方法來解決彼此的爭執：戰爭。而無論何時，戰爭中最常被使用的工具依舊是魔法。軍隊們用法術與符文武裝自己，英雄們鍛造出大部分魔法物品用以帶領軍隊作戰或進行支援。而瓦羅然大陸上實際的政治領導勢力——召喚師，則經常瘋狂使用魔法能量攻擊敵人的部隊與支持者。他們擁有近乎無限的原始魔法能量，從未考慮過無止境的濫用魔法會帶給這片大陸什麼樣的災難。</p>
 
@@ -80,8 +81,8 @@
     <input type  = "search" ng-model ="key" />
  <hr/>
     <ol>
-      <li>首頁<hr/></li>
-      <li>地圖<hr/></li>
+      <li ng-click="hero ='' ">首頁<hr/></li>
+      <li><a href = "#story">故事</a><hr/></li>
       <li>人物簡介</li>
     </ol>
      

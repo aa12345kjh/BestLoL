@@ -33,6 +33,7 @@ font-weight: bolder;
   width:75%; 
   max-height: 95%;
  overflow: auto;
+  z-index:1;
 }
 #photo{
   border-radius:1%;
@@ -52,10 +53,12 @@ nav  {
   position:fixed;
   top: 10px;
   right: 0px;
+  z-index:2;
 }
 .print{
   width:50px;
-}
+
+  z-index:20;}
 .ho{
   text-align:center;
   letter-spacing:5px;
