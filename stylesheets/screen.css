@@ -38,6 +38,7 @@ html {
   width: 75%;
   max-height: 95%;
   overflow: auto;
+  z-index:1;
 }
 
 /* line 37, ../sass/screen.scss */
@@ -63,6 +64,7 @@ nav {
   position: fixed;
   top: 10px;
   right: 0px;
+  z-index:2;
 }
 
 /* line 56, ../sass/screen.scss */

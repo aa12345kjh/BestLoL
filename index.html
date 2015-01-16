@@ -18,13 +18,14 @@
 </head>
 
 <body>
+  <nav>
+        <img class = "print" src = "https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10712961_733459460071971_5855446396591155799_n.jpg?oh=c4b478f9f91aa2091afbba24fbd981f5&oe=552708FB&__gda__=1432924365_c3faa7899867d46eee48f1860caf2195" alt = "圖" title = "按我" />    
+         <button class = "noPrint" onclick = "window.print()">列印</button>
+      </nav>
     <div id = "o" ng-hide = "hero">
     
         <img id = "picture" src ="http://lol.garena.tw/images/learn/lore/Institute_of_War.jpg" alt="封面圖">
-            <nav>
-        <img class = "print" src = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10540887_875524899166733_78737815_n.jpg?oh=65c79ec72da40f5504ae4977506a612f&oe=54B2585B&__gda__=1420974470_dcba09a6866150cf6a92d5cb136b4524" alt = "圖" title = "按我" />    
-         <button class = "noPrint" onclick = "window.print()">列印</button>
-      </nav>
+            
         <h2 class="ho">甚麼是英雄聯盟？</h2>
 
     <p>英雄聯盟(英語：League of Legends，簡稱「LOL」) ,是由Riot Games 所製作的「DotA」類型遊戲, 玩家扮演召喚師召喚並控制英雄,並被各自分到兩組隊伍。
@@ -33,11 +34,14 @@
     <h2 class="ho">英雄</h2>
 
           <p>每個玩家將在遊戲中控制一名英雄為本次遊戲所控制角色,而根據角色的不同,將會獲得一組與其他英雄不同的技能,活用這些技能是獲得勝利最重要的一部份。</p>
+    <h2 class ="ho">專業術語</h2>
 
+    <p>top= 上路，地圖最左邊和最上面那條路mid(middle)= 中路，中間那條直線的道路bot (bottom)= 下路，地圖最右邊和最下面那條路lane= 路，同路夥伴可以叫做lanemateAD= 物理攻擊輸出AP= 魔法攻擊輸出ADC= 物理遠程攻擊輸出CS=所擊殺的小兵AS=攻擊速度AOE=範圍傷害AFK= 掛機(泛指不再電腦前或忙其他事)BRB= 馬上回來SUP= 輔助，通常與AD同路FALL=  失誤GG= GoodGame的意思，通常在遊戲時出現
+    
           <h2 class="ho">英雄技能以及召喚師技能</h2>
     每位英雄都有獨特的一組技能組,每一組技能組將會四個技能,普通技能的原始熱鍵分別是Q W E ,而大招的技能熱鍵為R,除此之外每位玩家能設定兩個『召喚師技能』,如:治癒、重擊、點燃、虛弱、傳送等十三個技能,將會因為等級而逐漸開放。
 
-    <h2 class = "ho">故事</h2>
+    <h2 class = "ho"><a name ="story">故事</h2>
 
           <p>直到二十年前，符文大地一直都處於各種災難與戰爭中。這片大陸的人民自遠古以來就習慣結群而鬥，用最原始的方法來解決彼此的爭執：戰爭。而無論何時，戰爭中最常被使用的工具依舊是魔法。軍隊們用法術與符文武裝自己，英雄們鍛造出大部分魔法物品用以帶領軍隊作戰或進行支援。而瓦羅然大陸上實際的政治領導勢力——召喚師，則經常瘋狂使用魔法能量攻擊敵人的部隊與支持者。他們擁有近乎無限的原始魔法能量，從未考慮過無止境的濫用魔法會帶給這片大陸什麼樣的災難。</p>
 
@@ -62,11 +66,10 @@
 
   <div id="o" ng-show ="hero">
     <img ng-src = "{{hero.img}}"/>
-    <h1>路線：{{hero.sts}}<h1>
-    攻略：
-    <hr/>
-    <div ng-bind-html = "trust(hero.text)"></div>      
-
+      <h1>路線：{{hero.sts}}<h1>
+      攻略：
+      <hr/>
+      <div ng-bind-html = "trust(hero.text)"></div>      
     
   </div>
 
@@ -78,8 +81,8 @@
     <input type  = "search" ng-model ="key" />
  <hr/>
     <ol>
-      <li>首頁<hr/></li>
-      <li>地圖<hr/></li>
+      <li ng-click="hero ='' "><a>首頁</a><hr/></li>
+      <li ng-click="hero ='' "><a href = "#story">故事</a><hr/></li>
       <li>人物簡介</li>
     </ol>
      
