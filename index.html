@@ -63,8 +63,9 @@
   <div id="o" ng-show ="hero">
     <img ng-src = "{{hero.img}}"/>
     <h1>路線：{{hero.sts}}<h1>
-    攻略：{{hero.text}}
-      
+    攻略：
+    <hr/>
+    <div ng-bind-html = "trust(hero.text)"></div>      
 
     
   </div>
